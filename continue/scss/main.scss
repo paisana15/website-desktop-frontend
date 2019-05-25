@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+}
+
+h2{
+    transition-duration: 200ms;
+    transition-property: all;
+    &:hover{
+    transform: skew(25deg) rotate(3deg)scale(1.1);
+    text-shadow: 1px 5px 40px rgba(0, 0, 0, 0.300);
+    }
+}
+
+.image-container{
+    .image1, .image2, .image3{
+    transition-duration: 200ms;
+    transition-property: all;
+    &:hover{
+        transform: scale(1.1);
+        border: 15px solid #55c57a;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.080);
+    }
+    }
+}
+
+#linkstyle{
+    transition-duration: 200ms;
+    transition-property: all;
+    &:hover{
+        background-color: #55c57a;
+        transform: scale(1.1);
+        box-shadow: 0px 2px 5px 3px rgba(0, 0, 0, 0.075);
+        color: white;
+        padding: 4px;
+    }
+}
+
+#section-features{
+    .container{
+        transition-duration: 200ms;
+        transition-property: all;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+
+@import 'variables';
+@import 'header';
+@import 'footer';
+@import 'features';
+@import 'booking';
+@import 'about';
+@import 'tours';
+@import 'stories'
